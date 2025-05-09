@@ -3,13 +3,27 @@
 ## Project Overview
 DiscoveryLens+ is an AR and voice-enabled assistant that helps Discovery clients engage with Vitality benefits through an immersive, hands-free experience. The app allows users to visualize nearby partner locations, interact through natural voice commands, and receive personalized health recommendations.
 
-## Core Features
-- AR visualization of nearby Vitality partners
-- Voice-powered navigation and queries
-- Personal Health Pathways integration
-- Automated task handling (bookings, claims, reminders)
+## 🌐 Live Demo
+Check out our [live demo page](https://bhekumusaeric.github.io/DiscoveryGradHack/) to see the project concept and mockups.
 
-## Technology Stack
+## 🚀 Project Concept
+DiscoveryLens+ combines Augmented Reality with Voice AI to create an immersive assistant that helps clients engage with Vitality benefits:
+- Open your camera to see nearby partner locations visually marked in real-time
+- Use voice commands like "Where can I earn Vitality points near me?"
+- Let the assistant handle routine tasks like checking point balances or booking appointments
+- Receive personalized recommendations based on your health goals through Personal Health Pathways integration
+
+## 🔍 Problem Statement
+Clients struggle to discover nearby Vitality benefits and navigate complex health services, especially on-the-go or for elderly users. The traditional app-based interface requires multiple taps and navigation steps, creating friction in the user experience.
+
+## 💡 Solution
+Our solution transforms how users interact with Vitality benefits by leveraging cutting-edge technology:
+- **AR Visualization**: See partner locations through your camera view
+- **Voice Assistant**: Natural language interaction for queries and commands
+- **Health Pathways**: Personalized recommendations based on health goals
+- **Task Automation**: Simplified booking and engagement process
+
+## 🛠️ Technology Stack
 
 ### Frontend
 - **React Native** - Cross-platform mobile development
@@ -31,60 +45,31 @@ DiscoveryLens+ is an AR and voice-enabled assistant that helps Discovery clients
 - **Viro React** - AR framework for React Native
 - **Three.js** - 3D rendering for AR elements
 
-### Integration & Automation
-- **Axios** - API requests to Discovery services
-- **n8n/Zapier** - Workflow automation for RPA components
+## 📱 Key Features
 
-## Visualizing DiscoveryLens+ in Action
+### AR Visualization Layer
+- Map integration displaying nearby Vitality partners
+- Camera view with AR overlays showing partner locations
+- Visual indicators for different partner types (gyms, clinics, restaurants)
+- Point boost indicators and distance information
 
-### Visual Mockups
-To effectively communicate the DiscoveryLens+ concept, we'll create the following visual assets:
+### Voice AI Interface
+- Natural language processing for health and Vitality queries
+- Command recognition for common tasks (bookings, point checks)
+- Conversational responses with relevant information
+- Voice-guided navigation to selected locations
 
-1. **AR View Mockups**:
-   - Camera view showing AR markers for nearby Vitality partners
-   - Different colored markers for various partner types (gyms, restaurants, etc.)
-   - Distance and point value indicators
-   - Interactive elements when a marker is selected
+### Personal Health Pathways Integration
+- API connection to retrieve personalized health goals
+- Recommendation engine based on user's health profile
+- Prioritization of relevant partners based on health needs
 
-2. **User Flow Diagrams**:
-   - Sequence showing user opening app → scanning surroundings → seeing AR markers → selecting a location
-   - Voice command flow from user query to app response
+### RPA Backend
+- Automated task handling for bookings and appointments
+- Claims submission automation
+- Reminder and notification system
 
-3. **Interactive Prototype**:
-   - Figma/Adobe XD prototype demonstrating key user interactions
-   - Clickable elements showing transitions between screens
-
-### Demo Video Concept
-For the hackathon presentation, we'll create a 1-2 minute demo video that shows:
-
-1. User opening DiscoveryLens+ app
-2. Camera view activating with AR overlay showing nearby partners
-3. User asking: "Where can I earn Vitality points for healthy food?"
-4. App highlighting healthy food partners with visual indicators
-5. User selecting a partner and viewing details
-6. Voice assistant providing directions and additional information
-
-The video will combine:
-- Screen recordings of the prototype
-- AR effect overlays to simulate the final experience
-- Voice-over explaining the features and benefits
-
-### Presentation Slides
-Our presentation deck will include:
-- Problem statement with statistics on Vitality engagement
-- Solution overview with key differentiators
-- Technology architecture diagram
-- User flow visualizations
-- Mockup screens of key features
-- Future roadmap and potential impact
-
-### Technical Visualization
-For technical documentation, we'll create:
-- System architecture diagram showing component interactions
-- Data flow diagrams for key features
-- API endpoint documentation with example requests/responses
-
-## Implementation Roadmap
+## 📋 Implementation Roadmap
 
 ### Phase 1: Basic AR Visualization
 - Set up React Native project with Expo
@@ -109,3 +94,26 @@ For technical documentation, we'll create:
 - Create points checking functionality
 - Develop reminder system
 - Connect automation to voice commands
+
+## 📂 Repository Structure
+- `/src` - Source code for the React Native application
+- `/mockups` - Visual mockups and design assets
+- `/docs` - Documentation files
+
+## 🚀 Getting Started
+```bash
+# Clone the repository
+git clone https://github.com/BhekumusaEric/DiscoveryGradHack.git
+
+# Navigate to the project directory
+cd DiscoveryGradHack
+
+# Install dependencies
+npm install
+
+# Start the development server
+npx expo start
+```
+
+## 👥 Team
+- Bhekumusa Eric Ntshwenya
