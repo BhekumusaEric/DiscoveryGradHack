@@ -1,0 +1,232 @@
+# DISCOVERYLENS+ AR VIEW CONCEPT
+
+## VISUAL STORYBOARD
+
+### SCENE 1: INITIAL AR VIEW
+```
++-------------------------------------------------------+
+|                                                       |
+|  [All]  [Fitness]  [Food]  [Health]                   |
+|                                                       |
+|                                                       |
+|                                                       |
+|                   CAMERA VIEW                         |
+|                                                       |
+|                                                       |
+|      +------+                                         |
+|      |  GYM |  <-- Red floating marker                |
+|      +------+                                         |
+|                                                       |
+|                  +--------+                           |
+|                  |  FOOD  |  <-- Blue floating marker |
+|                  +--------+                           |
+|                                                       |
+|              +----------+                             |
+|              |  CLINIC  |  <-- Green floating marker  |
+|              +----------+                             |
+|                                                       |
+|                                                       |
+|                                                       |
+|                                                       |
+|                                                       |
+|                                                       |
+|                                                       |
+|                                                       |
+|                                                       |
+|                   (O)                                 |
+|          "Ask me about Vitality benefits"             |
+|                                                       |
++-------------------------------------------------------+
+```
+
+**DISPLAY ELEMENTS:**
+- Camera view showing the real world with buildings and streets
+- Semi-transparent status bar at top with Discovery logo and user's points (2,500)
+- Filter tabs at top: "All" (selected), "Fitness", "Food", "Health"
+- Floating AR markers with distinctive shapes and colors:
+  * RED HEXAGON: "Discovery Gym" (250m) - 100 Vitality Points
+  * BLUE SQUARE: "Healthy Food Market" (150m) - 50 Vitality Points
+  * GREEN CIRCLE: "Wellness Clinic" (400m) - 200 Vitality Points
+- Each marker has a subtle pulsing animation and casts a small shadow
+- Distance indicators showing straight-line distance to each location
+- Directional arrows pointing toward off-screen partners
+- Voice assistant button at bottom: pink circle with microphone icon
+- Text prompt: "Ask me about Vitality benefits"
+- Small AR positioning guide to help user align camera
+
+### SCENE 2: MARKER SELECTION
+```
++-------------------------------------------------------+
+|                                                       |
+|  [All]  [Fitness]  [Food]  [Health]                   |
+|                                                       |
+|                                                       |
+|                                                       |
+|                   CAMERA VIEW                         |
+|                                                       |
+|                                                       |
+|                                                       |
+|                                                       |
+|                                                       |
+|                                                       |
+|                  +-------------------+                |
+|                  |  HEALTHY FOOD     |                |
+|                  |  MARKET           |                |
+|                  |                   |                |
+|                  |  150m (3 min)     |                |
+|                  |  50 Vitality Pts  |                |
+|                  |                   |                |
+|                  | [View] [Navigate] |                |
+|                  +-------------------+                |
+|                                                       |
+|                                                       |
+|                                                       |
+|                                                       |
+|                                                       |
+|                                                       |
+|                   (O)                                 |
+|          "Ask me about Vitality benefits"             |
+|                                                       |
++-------------------------------------------------------+
+```
+
+**EXPANDED MARKER DETAILS:**
+- Partner card expands with smooth animation when marker is tapped
+- Card includes:
+  * Partner name in bold: "Healthy Food Market"
+  * Partner logo (Discovery-approved healthy food partner)
+  * Distance: "150m" and estimated walking time: "(3 min)"
+  * Available points: "50 Vitality Points"
+  * Brief description: "Earn points for healthy food purchases"
+  * Two action buttons: "View Details" and "Get Directions"
+- Card has a subtle drop shadow and matches partner type color theme
+- Background slightly dims to focus attention on the selected card
+- Dismiss by tapping elsewhere on screen
+
+### SCENE 3: VOICE COMMAND
+```
++-------------------------------------------------------+
+|                                                       |
+|  [All]  [Fitness]  [Food]  [Health]                   |
+|                                                       |
+|                                                       |
+|                                                       |
+|                   CAMERA VIEW                         |
+|                                                       |
+|                                                       |
+|                                                       |
+|                                                       |
+|                                                       |
+|                  +--------+                           |
+|                  |  FOOD  |  <-- Highlighted marker   |
+|                  +--------+                           |
+|                                                       |
+|                                                       |
+|                                                       |
+|                                                       |
+|                                                       |
+|  +--------------------------------------------------+ |
+|  | "Show me healthy food options nearby"            | |
+|  +--------------------------------------------------+ |
+|                                                       |
+|  +--------------------------------------------------+ |
+|  | "I found 3 healthy food partners within 500m"    | |
+|  +--------------------------------------------------+ |
+|                                                       |
+|                   (O)                                 |
+|                 *Listening*                           |
+|                                                       |
++-------------------------------------------------------+
+```
+
+**VOICE INTERACTION:**
+- Voice button pulses with pink glow when activated
+- Text "Listening..." appears below button
+- Speech recognition visualizer appears (sound wave animation)
+- User's command appears in speech bubble: "Show me healthy food options nearby"
+- All food markers highlight with increased brightness and size
+- Non-food markers fade to 50% opacity
+- Assistant response appears in Discovery-branded speech bubble
+- Voice speaks: "I found 3 healthy food partners within 500 meters"
+- Map automatically adjusts view to show all relevant markers
+- Each highlighted marker pulses briefly to draw attention
+
+### SCENE 4: NAVIGATION MODE
+```
++-------------------------------------------------------+
+|                                                       |
+|  [All]  [Fitness]  [Food]  [Health]                   |
+|                                                       |
+|  +-------------------+                                |
+|  | HEALTHY FOOD      |                                |
+|  | MARKET            |                                |
+|  |                   |                                |
+|  | 150m              |                                |
+|  +-------------------+                                |
+|                                                       |
+|                                                       |
+|                   CAMERA VIEW                         |
+|                                                       |
+|                                                       |
+|                                                       |
+|                                                       |
+|                                                       |
+|                                                       |
+|                                                       |
+|                                                       |
+|                                                       |
+|                                                       |
+|                                                       |
+|                                                       |
+|                                                       |
+|  +---+ Turn right on Main Street in 50m +------------+|
+|                                                       |
+|                   (O)                                 |
+|          "Ask me about Vitality benefits"             |
+|                                                       |
++-------------------------------------------------------+
+```
+
+**AR NAVIGATION:**
+- AR directional arrow appears on ground (3D path visualization)
+- Distance countdown updates in real-time as user walks
+- Turn-by-turn directions appear at bottom of screen
+- Destination marker is highlighted and enlarged
+- Mini-card with destination info remains at top of screen
+- Points available indicator pulses occasionally as reminder
+- Voice provides audio guidance at key navigation points
+- "Continue straight for 100 meters"
+- "Turn right at the next intersection"
+
+## DESIGN DETAILS
+
+**COLOR SCHEME:**
+- Primary: Discovery Pink (#e91e63)
+- Fitness Category: Red/Pink (#e91e63)
+- Food Category: Green (#4CAF50)
+- Health Category: Blue (#2196F3)
+- UI Elements: White with 80% opacity backgrounds
+- Text: Dark gray (#333) on light backgrounds, White on dark backgrounds
+
+**TYPOGRAPHY:**
+- Partner Names: 16pt Bold Discovery Sans
+- Distances: 14pt Regular Discovery Sans
+- Points: 14pt Bold Discovery Sans
+- Button Text: 14pt Medium Discovery Sans
+- Voice Transcripts: 14pt Italic Discovery Sans
+
+**ANIMATIONS:**
+- Markers pulse subtly to indicate interactivity
+- Selected markers expand with a bounce effect
+- Voice activation has a ripple animation from button
+- Navigation arrows have a subtle floating animation
+- Points indicators have a sparkling effect when highlighted
+
+**ACCESSIBILITY FEATURES:**
+- High contrast mode for better visibility in bright sunlight
+- Voice commands can be triggered by shake gesture
+- Haptic feedback when passing near a partner location
+- Screen reader compatibility for all UI elements
+- Adjustable text size options
+
+This visual concept demonstrates how DiscoveryLens+ creates an immersive, intuitive experience that seamlessly blends AR visualization with voice interaction to help users discover and engage with Vitality benefits in their surroundings.

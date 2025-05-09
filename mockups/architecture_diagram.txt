@@ -1,0 +1,75 @@
+ARCHITECTURE DIAGRAM CONCEPT
+
+This text file describes what the architecture diagram would look like:
+
++------------------------------------------+
+|                                          |
+|            DISCOVERYLENS+                |
+|                                          |
++------------------------------------------+
+
++----------------+      +----------------+      +----------------+
+|                |      |                |      |                |
+|  MOBILE APP    |<---->|  BACKEND       |<---->|  EXTERNAL      |
+|  (CLIENT)      |      |  SERVICES      |      |  SERVICES      |
+|                |      |                |      |                |
++----------------+      +----------------+      +----------------+
+
+CLIENT COMPONENTS:
++----------------+      +----------------+      +----------------+
+|                |      |                |      |                |
+|  AR VIEW       |      |  VOICE         |      |  MAP VIEW      |
+|  - ViroReact   |      |  ASSISTANT     |      |  - MapBox/     |
+|  - AR Kit/Core |      |  - React       |      |    Google Maps |
+|  - Three.js    |      |    Native Voice|      |  - Geolocation |
+|                |      |                |      |                |
++----------------+      +----------------+      +----------------+
+
++----------------+      +----------------+
+|                |      |                |
+|  HEALTH        |      |  USER          |
+|  PATHWAYS      |      |  PROFILE       |
+|  - Recommender |      |  - Auth        |
+|  - Goals       |      |  - Preferences |
+|                |      |                |
++----------------+      +----------------+
+
+BACKEND SERVICES:
++----------------+      +----------------+      +----------------+
+|                |      |                |      |                |
+|  FIREBASE      |      |  NODE.JS API   |      |  CLOUD         |
+|  - Auth        |      |  - Express     |      |  FUNCTIONS     |
+|  - Firestore   |      |  - Partner API |      |  - Automation  |
+|  - Storage     |      |  - Health API  |      |  - Webhooks    |
+|                |      |                |      |                |
++----------------+      +----------------+      +----------------+
+
+EXTERNAL SERVICES:
++----------------+      +----------------+      +----------------+
+|                |      |                |      |                |
+|  OPENAI APIs   |      |  DISCOVERY     |      |  MAPPING       |
+|  - Whisper     |      |  VITALITY API  |      |  SERVICES      |
+|  - GPT-4       |      |  - Partners    |      |  - Geocoding   |
+|                |      |  - Points      |      |  - Directions  |
+|                |      |  - Health      |      |                |
++----------------+      +----------------+      +----------------+
+
+DATA FLOW:
+1. User opens app and grants camera/location permissions
+2. App gets user location and fetches nearby partners from backend
+3. AR view displays partners as AR markers in camera view
+4. User speaks query to voice assistant
+5. Voice captured and sent to Whisper API for transcription
+6. Transcribed text sent to GPT-4 for intent recognition
+7. Backend processes intent and queries relevant APIs
+8. Response formatted and returned to client
+9. Voice assistant provides audio response
+10. AR view updates to highlight relevant partners
+11. User interactions logged for personalization
+
+SECURITY LAYERS:
+- Firebase Authentication
+- HTTPS for all API calls
+- Secure token handling
+- Permission-based access control
+- Data encryption at rest and in transit

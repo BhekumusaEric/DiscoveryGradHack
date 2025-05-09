@@ -1,0 +1,110 @@
+# DISCOVERYLENS+ VOICE INTERACTION FLOW
+
+## VOICE COMMAND SEQUENCE
+
+```
++-------------------+     +-------------------+     +-------------------+
+|                   |     |                   |     |                   |
+|  USER ACTIVATES   |     |  USER SPEAKS      |     |  SPEECH-TO-TEXT   |
+|  VOICE ASSISTANT  | --> |  COMMAND          | --> |  PROCESSING       |
+|                   |     |                   |     |  (WHISPER API)    |
+|                   |     |                   |     |                   |
++-------------------+     +-------------------+     +-------------------+
+          |                                                  |
+          |                                                  v
++-------------------+     +-------------------+     +-------------------+
+|                   |     |                   |     |                   |
+|  UI UPDATES       |     |  ASSISTANT        |     |  NATURAL LANGUAGE |
+|  BASED ON         | <-- |  SPEAKS           | <-- |  UNDERSTANDING    |
+|  RESPONSE         |     |  RESPONSE         |     |  (GPT-4)          |
+|                   |     |                   |     |                   |
++-------------------+     +-------------------+     +-------------------+
+```
+
+## EXAMPLE VOICE COMMANDS AND RESPONSES
+
+### Command Category: Discovery
+
+1. **User**: "What Vitality partners are nearby?"
+   **Assistant**: "I found 8 Vitality partners within 500 meters. Would you like me to show all of them or filter by category?"
+
+2. **User**: "Show me healthy food options"
+   **Assistant**: "I found 3 healthy food partners nearby. The closest is Healthy Food Market, 150 meters away, where you can earn 50 Vitality points."
+
+3. **User**: "Where can I earn the most Vitality points nearby?"
+   **Assistant**: "The Wellness Clinic 400 meters away offers 200 Vitality points for completing a health check. Would you like directions?"
+
+### Command Category: Information
+
+1. **User**: "How many Vitality points do I have?"
+   **Assistant**: "You currently have 2,500 Vitality points. You need 2,500 more to reach Gold status."
+
+2. **User**: "What benefits do I get at Discovery Gym?"
+   **Assistant**: "At Discovery Gym, you can earn 100 Vitality points per visit, up to 6 times per month. You also get a 25% discount on membership as a Silver status member."
+
+3. **User**: "Tell me about my health goals"
+   **Assistant**: "You're currently working on three health goals: 30 minutes of exercise 5 days a week, 5 servings of fruits and vegetables daily, and 7-8 hours of sleep each night. You're making good progress on exercise and sleep, but could improve on nutrition."
+
+### Command Category: Navigation
+
+1. **User**: "Take me to the nearest gym"
+   **Assistant**: "I'll guide you to Discovery Gym, 250 meters away. Follow the AR path on your screen."
+
+2. **User**: "How far is Wellness Clinic?"
+   **Assistant**: "Wellness Clinic is 400 meters away, about a 5-minute walk. Would you like directions?"
+
+3. **User**: "Find parking near Healthy Food Market"
+   **Assistant**: "There's a parking garage 50 meters from Healthy Food Market. I'll mark it on your AR view."
+
+### Command Category: Actions
+
+1. **User**: "Book a health check at Wellness Clinic"
+   **Assistant**: "I can help you book a health check at Wellness Clinic. They have availability tomorrow at 10:00 AM and 2:30 PM. Which would you prefer?"
+
+2. **User**: "Remind me to visit the gym tomorrow"
+   **Assistant**: "I've set a reminder for you to visit Discovery Gym tomorrow at 5:30 PM. Would you like me to add this to your calendar as well?"
+
+3. **User**: "Check in at this location"
+   **Assistant**: "I've checked you in at Healthy Food Market. You've earned 50 Vitality points. Your new total is 2,550 points."
+
+## VOICE ASSISTANT CAPABILITIES
+
+### Core Functions
+- Location-based partner discovery
+- Points information and tracking
+- Health goal monitoring and recommendations
+- Navigation and directions
+- Booking and appointment scheduling
+- Check-ins and points earning
+
+### Natural Language Understanding
+- Context awareness (remembers previous queries)
+- Location awareness (understands "here", "nearby", etc.)
+- Time awareness (understands "tomorrow", "next week", etc.)
+- Category recognition (understands "gym", "healthy food", etc.)
+- Action intent recognition (understands "book", "navigate", "check in", etc.)
+
+### Voice Characteristics
+- Friendly, helpful tone
+- Clear pronunciation
+- Natural pacing with appropriate pauses
+- Confirmation of actions before executing
+- Clarifying questions when needed
+
+### Accessibility Features
+- Works with screen readers
+- Supports multiple languages
+- Adjustable speech rate
+- Alternative input methods (text, gestures)
+- Haptic feedback for confirmation
+
+## IMPLEMENTATION NOTES
+
+For the hackathon prototype, we'll implement a limited set of voice commands using:
+
+1. **React Native Voice** for audio capture
+2. **OpenAI Whisper API** for speech-to-text conversion
+3. **GPT-4** for natural language understanding and response generation
+4. **Expo Speech** for text-to-speech output
+
+The voice assistant will be integrated with the AR view to create a seamless experience where voice commands can control what's displayed in the AR view, and the AR view can provide visual feedback for voice interactions.

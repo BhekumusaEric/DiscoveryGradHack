@@ -1,0 +1,189 @@
+# DISCOVERYLENS+ HEALTH PATHWAYS INTEGRATION
+
+## CONCEPT OVERVIEW
+
+The Health Pathways integration connects DiscoveryLens+ with the user's personal health journey, providing personalized recommendations based on their health goals, history, and current status. This creates a more meaningful engagement with Vitality benefits by prioritizing partners and activities that align with the user's specific health needs.
+
+## HEALTH PROFILE COMPONENTS
+
+```
++--------------------------------------------------+
+|                                                  |
+|  HEALTH PROFILE                                  |
+|                                                  |
+|  +----------------+  +---------------------+     |
+|  |                |  |                     |     |
+|  |  HEALTH GOALS  |  |  HEALTH METRICS     |     |
+|  |                |  |                     |     |
+|  +----------------+  +---------------------+     |
+|                                                  |
+|  +----------------+  +---------------------+     |
+|  |                |  |                     |     |
+|  |  ACTIVITY      |  |  NUTRITION          |     |
+|  |  HISTORY       |  |  PREFERENCES        |     |
+|  |                |  |                     |     |
+|  +----------------+  +---------------------+     |
+|                                                  |
+|  +----------------+  +---------------------+     |
+|  |                |  |                     |     |
+|  |  HEALTH        |  |  RECOMMENDED        |     |
+|  |  ASSESSMENTS   |  |  ACTIONS            |     |
+|  |                |  |                     |     |
+|  +----------------+  +---------------------+     |
+|                                                  |
++--------------------------------------------------+
+```
+
+### Health Goals
+- Weight management
+- Fitness improvement
+- Stress reduction
+- Chronic condition management
+- Preventive care
+- Sleep improvement
+- Nutrition optimization
+
+### Health Metrics
+- BMI and body composition
+- Resting heart rate
+- Blood pressure
+- Sleep quality and duration
+- Step count and activity levels
+- Nutrition intake
+- Stress levels
+
+### Activity History
+- Recent gym visits
+- Outdoor activities
+- Workout intensity and duration
+- Activity preferences
+- Achievement streaks
+- Engagement patterns
+
+### Nutrition Preferences
+- Dietary restrictions
+- Food preferences
+- Meal timing patterns
+- Nutritional goals
+- Previous healthy food purchases
+- Supplement usage
+
+### Health Assessments
+- Recent health checks
+- Screening status
+- Vaccination status
+- Chronic condition monitoring
+- Preventive care compliance
+- Mental health assessments
+
+### Recommended Actions
+- Prioritized health interventions
+- Next best actions
+- Suggested health checks
+- Recommended partners to visit
+- Personalized challenges
+- Educational resources
+
+## INTEGRATION WITH AR EXPERIENCE
+
+### Personalized Partner Highlighting
+```
++-------------------------------------------------------+
+|                                                       |
+|  [All]  [Fitness]  [Food]  [Health]  [For You ✓]      |
+|                                                       |
+|                                                       |
+|                   CAMERA VIEW                         |
+|                                                       |
+|                                                       |
+|      +------+                                         |
+|      |  GYM |                                         |
+|      +------+                                         |
+|                                                       |
+|                                                       |
+|                                                       |
+|                                                       |
+|              +----------+                             |
+|              |  CLINIC  |  <-- Highlighted based on   |
+|              +----------+      health pathway         |
+|                                                       |
+|  +--------------------------------------------------+ |
+|  | Based on your health goals, I recommend visiting | |
+|  | Wellness Clinic for your annual health check    | |
+|  +--------------------------------------------------+ |
+|                                                       |
+|                                                       |
+|                   (O)                                 |
+|                                                       |
++-------------------------------------------------------+
+```
+
+When the "For You" filter is selected, the AR view highlights partners that align with the user's health pathway:
+
+- **Priority Highlighting**: Partners that address immediate health needs are highlighted with a special glow effect
+- **Recommendation Badges**: Special badges appear on partners that are specifically recommended based on health goals
+- **Personalized Point Boosts**: Partners offering bonus points based on the user's health pathway are marked with a special indicator
+- **Goal Progress Indicators**: Shows how visiting a partner will contribute to specific health goals
+- **Time-Sensitive Recommendations**: Urgent health actions (like upcoming screenings) get priority highlighting
+
+### Voice Assistant Health Integration
+
+The voice assistant leverages health pathway data to provide personalized responses:
+
+1. **User**: "What should I focus on today?"
+   **Assistant**: "Based on your health goals and recent activity, I recommend visiting Wellness Clinic for your annual health check. It's been 11 months since your last one, and you'll earn 200 Vitality points."
+
+2. **User**: "How am I doing on my fitness goal?"
+   **Assistant**: "You've completed 3 out of 5 recommended workouts this week. Discovery Gym is 250 meters away and offers classes that align with your fitness preferences."
+
+3. **User**: "What healthy food options match my diet?"
+   **Assistant**: "I found 2 nearby partners that offer plant-based options matching your vegetarian preference. Healthy Food Market is closest and has items that would help with your nutrition goal."
+
+### Health Journey Visualization
+
+```
++-------------------------------------------------------+
+|                                                       |
+|  HEALTH JOURNEY                                       |
+|                                                       |
+|  +----------------------------------------------+     |
+|  |                                              |     |
+|  |  PROGRESS TIMELINE                           |     |
+|  |  ●---------●---------○---------○---------○  |     |
+|  |  Health    Fitness   Nutrition  Sleep    Mental   |     |
+|  |  Check                                     Health  |     |
+|  |                                              |     |
+|  +----------------------------------------------+     |
+|                                                       |
+|  NEXT RECOMMENDED STEPS:                              |
+|                                                       |
+|  1. Complete 2 more fitness activities this week      |
+|     [Discovery Gym - 250m]                            |
+|                                                       |
+|  2. Improve nutrition with healthy food choices       |
+|     [Healthy Food Market - 150m]                      |
+|                                                       |
+|  3. Schedule your annual health check                 |
+|     [Wellness Clinic - 400m]                          |
+|                                                       |
++-------------------------------------------------------+
+```
+
+The Health Journey screen provides:
+
+- **Progress Timeline**: Visual representation of the user's health journey with completed and upcoming milestones
+- **Achievement Badges**: Recognition for completed health actions and goals
+- **Next Best Actions**: Prioritized list of recommended health actions based on the user's profile
+- **Partner Connections**: Direct links between health recommendations and nearby Vitality partners
+- **Point Opportunities**: Clear indication of points available for completing recommended actions
+
+## IMPLEMENTATION APPROACH
+
+For the hackathon prototype, we'll implement a simplified version of the Health Pathways integration:
+
+1. **Mock Health Profile**: Create a simulated health profile with goals, metrics, and recommendations
+2. **Personalized AR Filter**: Implement a "For You" filter that highlights partners based on the mock health profile
+3. **Basic Voice Integration**: Add health-related voice commands that provide personalized recommendations
+4. **Simple Recommendation Engine**: Create a basic algorithm that matches partners to health goals
+
+The full implementation would connect to Discovery's Health Pathways API to access real user health data and provide truly personalized recommendations based on clinical insights and health journey information.

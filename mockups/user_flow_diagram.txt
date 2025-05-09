@@ -1,0 +1,123 @@
+USER FLOW DIAGRAM CONCEPT
+
+This text file describes what the user flow diagram would look like:
+
+START
+  |
+  v
++----------------+
+| LAUNCH APP     |
++----------------+
+  |
+  v
++----------------+     +----------------+
+| HOME SCREEN    |---->| LOGIN/SIGNUP   |
++----------------+     +----------------+
+  |                      |
+  | (if logged in)       |
+  v                      |
++----------------+       |
+| DASHBOARD      |<------+
++----------------+
+  |
+  +-------------------+-------------------+
+  |                   |                   |
+  v                   v                   v
++----------------+ +----------------+ +----------------+
+| AR VIEW        | | MAP VIEW       | | PROFILE        |
++----------------+ +----------------+ +----------------+
+  |                   |
+  | (tap AR button)   |
+  v                   |
++----------------+    |
+| CAMERA VIEW    |    |
+| WITH AR        |    |
++----------------+    |
+  |                   |
+  +-------------------+
+  |
+  v
++----------------+
+| SEE PARTNER    |
+| MARKERS        |
++----------------+
+  |
+  +-------------------+-------------------+
+  |                   |                   |
+  v                   v                   v
++----------------+ +----------------+ +----------------+
+| TAP MARKER     | | VOICE COMMAND  | | FILTER VIEW    |
++----------------+ +----------------+ +----------------+
+  |                   |                   |
+  v                   v                   v
++----------------+ +----------------+ +----------------+
+| PARTNER        | | VOICE          | | FILTERED       |
+| DETAILS        | | PROCESSING     | | MARKERS        |
++----------------+ +----------------+ +----------------+
+  |                   |                   |
+  |                   v                   |
+  |               +----------------+      |
+  |               | ASSISTANT      |      |
+  |               | RESPONSE       |      |
+  |               +----------------+      |
+  |                   |                   |
+  +-------------------+-------------------+
+  |
+  v
++----------------+
+| ENGAGEMENT     |
+| OPTIONS        |
++----------------+
+  |
+  +-------------------+-------------------+-------------------+
+  |                   |                   |                   |
+  v                   v                   v                   v
++----------------+ +----------------+ +----------------+ +----------------+
+| GET            | | BOOK           | | VIEW           | | SAVE TO        |
+| DIRECTIONS     | | APPOINTMENT    | | DETAILS        | | FAVORITES      |
++----------------+ +----------------+ +----------------+ +----------------+
+  |                   |                   |                   |
+  v                   v                   v                   v
++----------------+ +----------------+ +----------------+ +----------------+
+| NAVIGATION     | | BOOKING        | | DETAILED       | | CONFIRMATION   |
+| VIEW           | | FLOW           | | INFORMATION    | | MESSAGE        |
++----------------+ +----------------+ +----------------+ +----------------+
+  |                   |                   |                   |
+  +-------------------+-------------------+-------------------+
+  |
+  v
++----------------+
+| COMPLETION     |
+| & POINTS       |
++----------------+
+  |
+  v
+END
+
+KEY INTERACTION POINTS:
+
+1. AR CAMERA VIEW
+   - Permission requests (camera, location)
+   - AR marker rendering
+   - Distance calculation
+   - Partner type identification
+
+2. VOICE ASSISTANT
+   - Wake phrase detection
+   - Query transcription
+   - Intent recognition
+   - Response generation
+   - Action execution
+
+3. PARTNER ENGAGEMENT
+   - Partner details display
+   - Booking flow
+   - Directions
+   - Points earning information
+   - Health recommendations
+
+4. PERSONALIZATION
+   - Health pathway integration
+   - Preference-based filtering
+   - History-based recommendations
+   - Goal tracking

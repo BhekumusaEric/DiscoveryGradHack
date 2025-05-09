@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiscoveryLens+ Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #e91e63;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        h1, h2, h3 {
+            color: #e91e63;
+        }
+        .section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+        .mockup {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            font-family: monospace;
+            white-space: pre-wrap;
+            overflow-x: auto;
+        }
+        .code {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: monospace;
+            white-space: pre-wrap;
+            overflow-x: auto;
+        }
+        .feature-card {
+            background-color: white;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .feature-icon {
+            font-size: 24px;
+            margin-right: 10px;
+            color: #e91e63;
+        }
+        .nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        .nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .nav a:hover {
+            background-color: #e91e63;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DiscoveryLens+</h1>
+        <p>AR and voice-enabled assistant for Discovery Vitality benefits</p>
+    </header>
+    
+    <div class="nav">
+        <a href="#overview">Overview</a>
+        <a href="#features">Features</a>
+        <a href="#mockups">Mockups</a>
+        <a href="#architecture">Architecture</a>
+        <a href="#implementation">Implementation</a>
+    </div>
+    
+    <div class="container">
+        <section id="overview" class="section">
+            <h2>Project Overview</h2>
+            <p>DiscoveryLens+ is an AR and voice-enabled assistant that helps Discovery clients engage with Vitality benefits through an immersive, hands-free experience. The app allows users to visualize nearby partner locations, interact through natural voice commands, and receive personalized health recommendations.</p>
+            
+            <div class="feature-card">
+                <h3><span class="feature-icon">🔍</span>Problem Statement</h3>
+                <p>Clients struggle to discover nearby Vitality benefits and navigate complex health services, especially on-the-go or for elderly users. The traditional app-based interface requires multiple taps and navigation steps, creating friction in the user experience.</p>
+            </div>
+            
+            <div class="feature-card">
+                <h3><span class="feature-icon">💡</span>Solution</h3>
+                <p>DiscoveryLens+ combines Augmented Reality with Voice AI to create an immersive assistant that helps clients engage with Vitality benefits in their surroundings.</p>
+            </div>
+        </section>
+        
+        <section id="features" class="section">
+            <h2>Key Features</h2>
+            
+            <div class="feature-card">
+                <h3><span class="feature-icon">📱</span>AR Visualization Layer</h3>
+                <ul>
+                    <li>Map integration displaying nearby Vitality partners</li>
+                    <li>Camera view with AR overlays showing partner locations</li>
+                    <li>Visual indicators for different partner types (gyms, clinics, restaurants)</li>
+                    <li>Point boost indicators and distance information</li>
+                </ul>
+            </div>
+            
+            <div class="feature-card">
+                <h3><span class="feature-icon">🎤</span>Voice AI Interface</h3>
+                <ul>
+                    <li>Natural language processing for health and Vitality queries</li>
+                    <li>Command recognition for common tasks (bookings, point checks)</li>
+                    <li>Conversational responses with relevant information</li>
+                    <li>Voice-guided navigation to selected locations</li>
+                </ul>
+            </div>
+            
+            <div class="feature-card">
+                <h3><span class="feature-icon">🧠</span>Personal Health Pathways Integration</h3>
+                <ul>
+                    <li>API connection to retrieve personalized health goals</li>
+                    <li>Recommendation engine based on user's health profile</li>
+                    <li>Prioritization of relevant partners based on health needs</li>
+                </ul>
+            </div>
+            
+            <div class="feature-card">
+                <h3><span class="feature-icon">⚙️</span>RPA Backend</h3>
+                <ul>
+                    <li>Automated task handling for bookings and appointments</li>
+                    <li>Claims submission automation</li>
+                    <li>Reminder and notification system</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section id="mockups" class="section">
+            <h2>Visual Mockups</h2>
+            
+            <h3>AR View Concept</h3>
+            <div class="mockup">
++-------------------------------------------------------+
+|                                                       |
+|  [All]  [Fitness]  [Food]  [Health]                   |
+|                                                       |
+|                                                       |
+|                                                       |
+|                   CAMERA VIEW                         |
+|                                                       |
+|                                                       |
+|      +------+                                         |
+|      |  GYM |  <-- Red floating marker                |
+|      +------+                                         |
+|                                                       |
+|                  +--------+                           |
+|                  |  FOOD  |  <-- Blue floating marker |
+|                  +--------+                           |
+|                                                       |
+|              +----------+                             |
+|              |  CLINIC  |  <-- Green floating marker  |
+|              +----------+                             |
+|                                                       |
+|                                                       |
+|                                                       |
+|                                                       |
+|                                                       |
+|                                                       |
+|                                                       |
+|                                                       |
+|                                                       |
+|                   (O)                                 |
+|          "Ask me about Vitality benefits"             |
+|                                                       |
++-------------------------------------------------------+
+            </div>
+            
+            <h3>Voice Interaction Flow</h3>
+            <div class="mockup">
++-------------------+     +-------------------+     +-------------------+
+|                   |     |                   |     |                   |
+|  USER ACTIVATES   |     |  USER SPEAKS      |     |  SPEECH-TO-TEXT   |
+|  VOICE ASSISTANT  | --> |  COMMAND          | --> |  PROCESSING       |
+|                   |     |                   |     |  (WHISPER API)    |
+|                   |     |                   |     |                   |
++-------------------+     +-------------------+     +-------------------+
+          |                                                  |
+          |                                                  v
++-------------------+     +-------------------+     +-------------------+
+|                   |     |                   |     |                   |
+|  UI UPDATES       |     |  ASSISTANT        |     |  NATURAL LANGUAGE |
+|  BASED ON         | <-- |  SPEAKS           | <-- |  UNDERSTANDING    |
+|  RESPONSE         |     |  RESPONSE         |     |  (GPT-4)          |
+|                   |     |                   |     |                   |
++-------------------+     +-------------------+     +-------------------+
+            </div>
+        </section>
+        
+        <section id="architecture" class="section">
+            <h2>Technical Architecture</h2>
+            
+            <h3>Technology Stack</h3>
+            <div class="feature-card">
+                <h4>Frontend</h4>
+                <ul>
+                    <li><strong>React Native with Expo</strong>: Cross-platform mobile development framework</li>
+                    <li><strong>ViroReact</strong>: AR integration library that works with ARKit (iOS) and ARCore (Android)</li>
+                    <li><strong>React Navigation</strong>: For app navigation</li>
+                    <li><strong>React Native Elements</strong>: UI component library</li>
+                </ul>
+            </div>
+            
+            <div class="feature-card">
+                <h4>Backend & Services</h4>
+                <ul>
+                    <li><strong>Firebase</strong>: Authentication, Firestore (NoSQL database), Cloud Functions</li>
+                    <li><strong>MapBox/Google Maps API</strong>: Location services and mapping</li>
+                    <li><strong>OpenAI APIs</strong>: Whisper API for voice-to-text, GPT-4 for natural language understanding</li>
+                </ul>
+            </div>
+            
+            <h3>Architecture Diagram</h3>
+            <div class="mockup">
++------------------------------------------+
+|                                          |
+|            DISCOVERYLENS+                |
+|                                          |
++------------------------------------------+
+                |                  |                  |
+                v                  v                  v
++----------------+      +----------------+      +----------------+
+|                |      |                |      |                |
+|  MOBILE APP    |<---->|  BACKEND       |<---->|  EXTERNAL      |
+|  (CLIENT)      |      |  SERVICES      |      |  SERVICES      |
+|                |      |                |      |                |
++----------------+      +----------------+      +----------------+
+            </div>
+        </section>
+        
+        <section id="implementation" class="section">
+            <h2>Implementation Roadmap</h2>
+            
+            <div class="feature-card">
+                <h3>Phase 1: Basic AR Visualization</h3>
+                <ul>
+                    <li>Set up React Native project with Expo</li>
+                    <li>Implement basic map integration</li>
+                    <li>Create AR view with mock partner locations</li>
+                    <li>Develop UI for displaying partner information</li>
+                </ul>
+            </div>
+            
+            <div class="feature-card">
+                <h3>Phase 2: Voice Command System</h3>
+                <ul>
+                    <li>Integrate speech recognition</li>
+                    <li>Implement basic NLP for command interpretation</li>
+                    <li>Create response generation for common queries</li>
+                    <li>Connect voice interface with AR visualization</li>
+                </ul>
+            </div>
+            
+            <div class="feature-card">
+                <h3>Phase 3: Health Pathways Integration</h3>
+                <ul>
+                    <li>Create mock API for Personal Health Pathways</li>
+                    <li>Develop recommendation engine</li>
+                    <li>Implement personalized suggestions based on health goals</li>
+                    <li>Connect recommendations to AR visualization</li>
+                </ul>
+            </div>
+            
+            <div class="feature-card">
+                <h3>Phase 4: Task Automation</h3>
+                <ul>
+                    <li>Implement booking flow simulation</li>
+                    <li>Create points checking functionality</li>
+                    <li>Develop reminder system</li>
+                    <li>Connect automation to voice commands</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
